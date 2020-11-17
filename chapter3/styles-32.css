@@ -16,24 +16,16 @@ header {
 	background-color: #0072b0;
 	border-radius: 0.5em;
 }
-.wrapper {
-	margin-left: -1.5em;
-	margin-right:  -1.5em;
-}
 .container {
-	display: table;
-	width: 100%;
-	border-spacing: 1.5em 0;
+	display: flex;
 }
 .main {
-	display: table-cell;
 	width: 70%;
 	background-color: #fff;
 	border-radius: 0.5em;
 }
 
 .sidebar {
-	display: table-cell;
 	width: 30%;
 	margin-left: 1.5em;
 	padding: 1.5em;
