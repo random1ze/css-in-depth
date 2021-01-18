@@ -38,6 +38,7 @@ button {
 	bottom: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
 }
 .modal-body {
 	position: fixed;
@@ -48,6 +49,7 @@ button {
 	padding: 2em 3em;
 	background-color: white;
 	overflow: auto;
+	z-index: 2;
 }
 .modal-close {
 	position: absolute;
@@ -71,11 +73,26 @@ button {
 	content: "\00D7";
 }
 
-
 .container {
+	display: flex;
 	width: 80%;
 	max-width: 1000px;
 	margin: 1em auto;
+	min-height: 100vh;
+}
+
+.col-main {
+	flex: 1 80%;
+}
+
+.col-sidebar {
+	flex: 20%;
+}
+
+.affix {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 1em;
 }
 
 .dropdown {
