@@ -128,3 +128,62 @@ main {
 	color: #fff;
 	font-weight: normal;
 }
+
+@media (min-width: 35em) {
+	.title > h1 {
+		font-size: 2.25rem;
+	}
+
+	.page-header {
+		padding: 1em;
+	}
+
+	.hero {
+		padding: 5em 3em;
+		font-size: 1.2re;
+	}
+
+	main {
+		padding: 2em 1em;
+	}
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.menu-dropdown {
+		display: block;
+		position: static;
+	}
+
+	.nav-menu {
+		display: flex;
+		border: 0;
+		padding: 0 1em;
+	}
+
+	.nav-menu > li {
+		flex: 1;
+	}
+
+	.nav-menu > li + li {
+		border: 0;
+	}
+
+	.nav-menu > li > a {
+		padding: 0.3em;
+		text-align: center;
+	}
+
+	.row {
+		display: flex;
+		margin-left: -0.75em;
+		margin-right: -0.75em;
+	}
+
+	.column {
+		flex: 1;
+		margin-right: 0.75em;
+		margin-left: 0.75em;
+	}
+}
