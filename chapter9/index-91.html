@@ -20,8 +20,8 @@
 	<button class="button button--large">Подробнее</button>
 	<button class="button button--success">Сохранить</button>
 	<button class="button button--danger button--small">Отмена</button>
-	
-	<div class="media">
+
+	<div class="media media--right">
 		<img src="../chapter4/runner.png" class="media__image">
 		<div class="media__body">
 			<h4>Физкультура</h4>
@@ -30,5 +30,29 @@
 			</p>
 		</div>
 	</div>
+
+	<div class="dropdown">
+		<button class="dropdown__toggle">Меню</button>
+		<div class="dropdown__drawer">
+			<ul class="menu">
+				<li><a href="/">Главная</a></li>
+				<li><a href="/coffees">Ростеры</a></li>
+				<li><a href="/brewers">Кофеварки</a></li>
+				<li><a href="/specials">Акции!</a></li>
+				<li><a href="/about">О нас</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		(function () {
+			var toggle = document.querySelector('.dropdown__toggle')
+			toggle.addEventListener('click', function(event) {
+				event.preventDefault()
+				var dropdown = event.target.parentNode
+				dropdown.classList.toggle('is-open')
+			})
+		}())
+	</script>
 </body>
 </html>
