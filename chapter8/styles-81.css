@@ -50,7 +50,7 @@ a:active {
 .hero {
 	padding: 2em 1em;
 	text-align: center;
-	background-image: url("images/coffee-beans.jpg");
+	background-image: url("images/coffee-beans-small.jpg");
 	background-size: 100%;
 	color: #fff;
 	text-shadow: 0.1em 0.1em 0.3em #000;
@@ -140,7 +140,9 @@ main {
 
 	.hero {
 		padding: 5em 3em;
-		font-size: 1.2re;
+		font-size: 1.2rem;
+
+		background-image: url('images/coffee-beans-medium.jpg');
 	}
 
 	main {
@@ -185,5 +187,28 @@ main {
 		flex: 1;
 		margin-right: 0.75em;
 		margin-left: 0.75em;
+	}
+}
+
+@media (min-width: 50em) {
+
+	:root {
+		font-size: 1.125em;
+	}
+	.page-header {
+		padding: 1em 4em;
+	}
+
+	.hero {
+		padding: 7em 6em;
+		background-image: url('images/coffee-beans.jpg');
+	}
+
+	main {
+		padding: 2em 4em;
+	}
+
+	.nav-menu {
+		padding: 0 4em;
 	}
 }
