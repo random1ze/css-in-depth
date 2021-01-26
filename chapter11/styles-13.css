@@ -6,3 +6,13 @@
 	background-position: -30vw, 30vw;
 	background-blend-mode: multiply;
 }
+
+.blend-1 {
+	min-height: 400px;
+	background-image: url('images/bear.jpg');
+	background-color: #148;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-blend-mode: luminosity;
+}
