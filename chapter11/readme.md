@@ -3,8 +3,8 @@
 * Можно применять градиенты с явными цветовыми узлами, чтобы создать эффект полос
 * Едва уловимый градиент в качестве фона всегда выигрывает по сравнению с простым цветом
 * Использовать режимы смешивания, чтобы придать изображениям необходимый оттенок или наложить текстуру
-* Подробнее про градиенты: developer.mozilla.org/ru/docs/Web/CSS/radial-gradient
-* Актуальная информация по смешиванию: caniuse.com/#feat=css-backgroundblendmode
+* Подробнее про градиенты: [developer.mozilla.org/ru/docs/Web/CSS/radial-gradient](developer.mozilla.org/ru/docs/Web/CSS/radial-gradient)
+* Актуальная информация по смешиванию: [caniuse.com/#feat=css-backgroundblendmode](caniuse.com/#feat=css-backgroundblendmode)
 ***
 ## Режимы смешивания
 
