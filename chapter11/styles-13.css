@@ -25,3 +25,22 @@
 	background-position: center center;
 	background-blend-mode: soft-light;
 }
+
+.blend-3 {
+	background-image: url('images/bear.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 15em 0 1em;
+}
+
+.blend-3 > h1 {
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 6rem;
+	text-align: center;
+	mix-blend-mode: hard-light;
+	background-color: #c33;
+	color: #808080;
+	border: 0.1em solid #ccc;
+	border-width: 0.1em 0;
+}
