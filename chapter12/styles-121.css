@@ -81,3 +81,38 @@ a:active {
 	color: var(--medium-green);
 	background-color: var(--white);
 }
+
+.hero {
+	background:url('images/collaboration.jpg') no-repeat;
+	background-size: cover;
+	margin-bottom: 2.5rem;
+}
+.hero__inner {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 50px 0 200px;
+	text-align: right;
+}
+.hero h2{
+	font-size: 1.95rem;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.4em 1em;
+	color: var(--brand-green);
+	border: 2px solid var(--brand-green);
+	border-radius: 0.2em;
+	text-decoration: none;
+	font-size: 1rem;
+}
+.button:hover {
+	background-color: var(--dark-green);
+	color: var(--white);
+}
+.button--cta {
+	padding: 0.6em 1em;
+	background-color: var(--brand-green);
+	color: var(--white);
+	border: none;
+}
