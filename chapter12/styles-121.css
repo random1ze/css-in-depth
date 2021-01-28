@@ -100,11 +100,13 @@ a:active {
 .hero__inner {
 	max-width: 1080px;
 	margin: 0 auto;
-	padding: 50px 0 200px;
+	padding: 5.56em 12.5em 12.5em 0;
 	text-align: right;
 }
 .hero h2 {
 	font-size: 1.95rem;
+	margin-top: 0;
+	margin-bottom: 0.625rem;
 }
 
 .button {
@@ -132,6 +134,11 @@ a:active {
 	max-width: 1080px;
 }
 
+p {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
 .tile-row {
 	display: flex;
 }
@@ -145,6 +152,23 @@ a:active {
 .tile {
 	background-color: var(--white);
 	border-radius: 0.3em;
+	padding: 1.5625em;
+}
+.tile > h4 {
+	margin-bottom: 1.5em;
+}
+
+.tag-list {
+	list-style: none;
+	padding-left: 0;
+}
+.tag-list > li {
+	display: inline;
+	padding: 0.3rem 0.5rem;
+	font-size: 0.8rem;
+	border-radius: 0.2rem;
+	background-color: var(--light-gray);
+	line-height: 2.6;
 }
 
 .page-footer {
