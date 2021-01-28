@@ -1,16 +1,16 @@
 html {
 	--brand-green: hsl(162, 87%, 21%);
-  --dark-green: hsl(162, 88%, 30%);
-  --medium-green: hsl(162, 73%, 46%);
-  --text-color: hsl(210, 11%, 15%);
-  --gray: hsl(210, 7%, 56%);
-  --light-gray: hsl(210, 17%, 95%);
-  --extra-light-gray: hsl(210, 17%, 98%);
+	--dark-green: hsl(162, 88%, 30%);
+	--medium-green: hsl(162, 73%, 46%);
+	--text-color: hsl(210, 11%, 15%);
+	--gray: hsl(210, 7%, 56%);
+	--light-gray: hsl(210, 17%, 95%);
+	--extra-light-gray: hsl(210, 17%, 98%);
 	--white: hsl(0, 0%, 100%);
 	--red: hsl(342, 63%, 46%);
 
-	box-sizing: ;box-sizing
-	color: var(--text-color);colorcolorcolorcolorcolorcolorcolorcolorcolorcolorcolorcolorcolor
+	box-sizing: border-box;
+	color: var(--text-color);
 }
 *,
 *::before,
@@ -25,7 +25,10 @@ body {
 	background-color: var(--extra-light-gray);
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
 	font-family: Georgia, serif;
 }
 
@@ -50,6 +53,7 @@ a:active {
 	justify-content: space-between;
 	max-width: 1080px;
 	margin: 0 auto;
+	padding: 0.625em 0;
 }
 
 .home-link {
@@ -63,6 +67,10 @@ a:active {
 .top-nav {
 	display: flex;
 	list-style-type: none;
+	margin: 0;
+}
+.top-nav > li + li {
+	margin-left: 0.625em;
 }
 .top-nav a {
 	display: block;
@@ -85,7 +93,7 @@ a:active {
 }
 
 .hero {
-	background:url('images/collaboration.jpg') no-repeat;
+	background: url("images/collaboration.jpg") no-repeat;
 	background-size: cover;
 	margin-bottom: 2.5rem;
 }
@@ -95,7 +103,7 @@ a:active {
 	padding: 50px 0 200px;
 	text-align: right;
 }
-.hero h2{
+.hero h2 {
 	font-size: 1.95rem;
 }
 
@@ -129,6 +137,9 @@ a:active {
 }
 .tile-row > * {
 	flex: 1;
+}
+.tile-row > * + * {
+	margin-left: 1.5625em;
 }
 
 .tile {
