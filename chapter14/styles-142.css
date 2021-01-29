@@ -1,0 +1,32 @@
+.container {
+	position: relative;
+	height: 150px;
+	background-color: hsl(310, 50%, 50%);
+}
+
+.box {
+	position: absolute;
+	left: 60px;
+	height: 30px;
+	width: 30px;
+	background-color: hsl(130, 50%, 50%);
+}
+.box-1 {
+	transition: all 1s linear;
+}
+.box-2 {
+	top: 40px;
+	transition: all 1s ease-in;
+}
+.box-3 {
+	top: 80px;
+	transition: all 1s ease-out;
+}
+.box-4 {
+	top: 120px;
+	transition: all 1s ease-in-out;
+}
+
+.container:hover .box {
+	left: 400px;
+}
