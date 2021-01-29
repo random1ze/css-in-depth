@@ -61,5 +61,27 @@
 		</div>
 	</footer>
 
+	<script>
+		var html = document.documentElement;
+		var script = document.createElement("script");
+		script.src = "fontfaceobserver.js";
+		script.async = true;
+
+		script.onload = function () {
+			var roboto = new FontFaceObserver("Roboto");
+			var kurale = new FontFaceObserver("Kurale");
+			var timeout = 2000;
+
+			Promise.all([
+				roboto.load(null, timeout),
+				kurale.load(null, timeout)
+			]).then(function () {
+				html.classList.add("fonts-loaded");
+			}).catch(function (e) {
+				html.classList.add("fonts-failed");
+			});
+		};
+		document.head.appendChild(script);
+	</script>
 </body>
 </html>
