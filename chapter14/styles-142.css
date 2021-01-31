@@ -1,6 +1,6 @@
 .container {
 	position: relative;
-	height: 150px;
+	height: 190px;
 	background-color: hsl(310, 50%, 50%);
 }
 
@@ -27,6 +27,17 @@
 	transition: all 1s ease-in-out;
 }
 
-.container:hover .box {
+.box-0 {
+	position: absolute;
+	left: 60px;
+	top: 160px;
+	height: 30px;
+	width: 30px;
+	background-color: hsl(130, 50%, 50%);
+	transition: all 1s steps(3);
+}
+
+.container:hover .box,
+.container:hover .box-0 {
 	left: 400px;
 }
