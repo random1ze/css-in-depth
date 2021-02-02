@@ -95,4 +95,13 @@ img {
 	.nav-links__label {
 		margin-left: 1em;
 	}
+
+	.nav-links__icon {
+		transition: transform 0.2s ease-out;
+	}
+
+	.nav-links a:hover > .nav-links__icon,
+	.nav-links a:focus > .nav-links__icon {
+		transform: scale(1.5);
+	}
 }
