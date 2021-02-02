@@ -35,12 +35,6 @@ img {
 	padding: 1rem;
 }
 
-@media (min-width: 30em) {
-	.page-header {
-		padding: 2rem 2rem 3rem;
-	}
-}
-
 .nav-links {
 	display: flex;
 	justify-content: space-between;
@@ -68,4 +62,37 @@ img {
 }
 .nav-links > li > a:hover {
 	color: hsl(40, 100%, 70%);
+}
+
+@media (min-width: 30em) {
+	.page-header {
+		padding: 2rem 2rem 3rem;
+	}
+
+	.main-nav {
+		position: fixed;
+		left: 0;
+		top: 8.25rem;
+		z-index: 10;
+		background-color: transparent;
+		transition: background-color .5s li;
+		border-top-right-radius: 0.5em;
+		border-bottom-right-radius: 0.5em;
+	}
+
+	.main-nav:hover {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	.nav-links {
+		display: block;
+		padding: 1em;
+		margin-bottom: 0;
+	}
+	.nav-links > li + li {
+		margin-left: 0;
+	}
+	.nav-links__label {
+		margin-left: 1em;
+	}
 }
