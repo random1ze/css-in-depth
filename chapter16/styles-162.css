@@ -64,6 +64,22 @@ img {
 	color: hsl(40, 100%, 70%);
 }
 
+.flyin-grid {
+	margin: 0 1rem;
+}
+
+.card {
+	margin-bottom: 1em;
+	padding: 0.5em;
+	background-color: white;
+	color: hsl(210, 15%, 20%);
+	box-shadow: 0.2em 0.5em 1em rgba(0, 0, 0, 0.3);
+}
+.card > img {
+	width: 100%;
+}
+
+
 @media (min-width: 30em) {
 	.page-header {
 		padding: 2rem 2rem 3rem;
@@ -125,5 +141,30 @@ img {
 	.nav-links a:hover > .nav-links__icon,
 	.nav-links a:focus > .nav-links__icon {
 		transform: scale(1.5);
+	}
+
+	.flyin-grid {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 5rem;
+	}
+
+	.flyin-grid__item {
+		flex: 1 1 300px;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+		max-width: 600px;
+	}
+
+	@supports (display: grid) {
+		.flyin-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			grid-gap: 2em;
+		}
+		.flyin-grid__item {
+			max-width: initial;
+			margin: 0;
+		}
 	}
 }
